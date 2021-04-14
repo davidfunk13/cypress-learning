@@ -9,6 +9,7 @@ describe('Working with input fields', () => {
 		cy.visit('http://zero.webappsecurity.com/login.html')
 		cy.clearCookies({ log: true })
 		cy.clearLocalStorage('your item', { log: true })
+        cy.title().should("contain", "Zero - Log in")
 	})
 
 	it('Should fill out username.', () => {
