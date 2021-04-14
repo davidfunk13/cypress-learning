@@ -1,18 +1,9 @@
-describe('My first simple test with Cypress', () => {
-	it("True should be true.",()=>{
-        expect(true).to.equal(true);
-    })
-    it("",()=>{
-        expect(5).to.equal(5);
-    })
-})
-
-describe('Additional describe block', () => {
-	it("False should be false.",()=>{
-        expect(false).to.equal(false);
-    })
-    it("",()=>{
-        expect(5).to.equal(5);
-    })
-})
+describe('Browser actions', () => {
+	it('Should load correct url', () => {
+		cy.visit('www.google.com', { timeout: 10000 })
+	})
     
+    it("Should check correct url", ()=>{
+        cy.url().should("include", "google.com");
+    })
+})
