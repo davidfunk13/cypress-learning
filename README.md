@@ -3,15 +3,21 @@ learning cypress
 
 # Cypress Notes
 
-Intro
+
+# Intro
 
 — Easy for beginners 
+
 — Does not use Selenium to control browser, has own methods
-	- at this time it is unclear what those are or if it is a headless browser still.
+
 — works with any frontend framework
+
 — no boilerplate or config 
+
 — has visual interface
+
 — automatic async/waiting
+
 — realtime reloads on change
 
 —works on network layer
@@ -19,8 +25,11 @@ Intro
 Limitations: 
 
 — only javascript
+
 — limited cross browser testing ability.
-	- no safari
+
+- no safari
+
 — one browser, one tab at a time.
 
 FIXTURES
