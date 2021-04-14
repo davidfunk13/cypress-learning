@@ -4,15 +4,22 @@ describe('Working with input fields', () => {
     })
 
     it("Should fill out username.", ()=>{    
+        cy.get("#user_login").as("username");
         // clear input before typing into it ALWAYS.
-        cy.get("#user_login").clear();
+        cy.get("@username").clear();
 
-        cy.get("#user_login").type("Some Invalid Name");
+        cy.get("@username").type("Some Invalid Name");
     })
 
     it("Should fill out password.", ()=>{
-        cy.get("#user_password").clear();
-        cy.get("#user_password").type("Some invalid password");
+        cy.get("#user_password").as("password");
+        cy.get("@password").clear();
+        cy.get("@password").type("Some invalid password");
+    })
+
+    it("Should check the checkbox", ()=>{
+        cy.get('input[type="checkbox"]').as("checkbox")
+        cy.get("@checkbox").click()
     })
 
     it("Should submit form.", ()=>{
