@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "cypress": "^7.1.0"
-  }
+    "cypress": "^7.1.0",
+    "prettier": "^2.2.1"
+  },
+  "name": "cypress-learning",
+  "description": "learning cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidfunk13/cypress-learning.git"
+  },
+  "author": "Dave Funk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidfunk13/cypress-learning/issues"
+  },
+  "homepage": "https://github.com/davidfunk13/cypress-learning#readme"
 }
